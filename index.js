@@ -38,22 +38,22 @@ function play(playerChoice) {
         playerScore++;
         document.getElementById('win-area').style.display='block';
         if(playerChoice==='rock'){
-            document.getElementById('user-rock-win').style.display='block';
+            document.getElementById('user-rock-win').style.display='flex';
         }
         else if(playerChoice==='paper'){
-            document.getElementById('user-paper-win').style.display='block';
+            document.getElementById('user-paper-win').style.display='flex';
         }
         else{
-            document.getElementById('user-scissor-win').style.display='block';
+            document.getElementById('user-scissor-win').style.display='flex';
         }
         if(computerChoice==='rock'){
-            document.getElementById('cpu-rock-win').style.display='block';
+            document.getElementById('cpu-rock-win').style.display='flex';
         }
         else if(computerChoice==='paper'){
-            document.getElementById('cpu-paper-win').style.display='block';
+            document.getElementById('cpu-paper-win').style.display='flex';
         }
         else {
-            document.getElementById('cpu-scissor-win').style.display='block';
+            document.getElementById('cpu-scissor-win').style.display='flex';
         }
     
     } 
@@ -63,47 +63,47 @@ function play(playerChoice) {
     {
         document.getElementById('lost-area').style.display='block';
         if(playerChoice==='rock'){
-            document.getElementById('user-rock-lost').style.display='block';
+            document.getElementById('user-rock-lost').style.display='flex';
         }
         else if(playerChoice==='paper'){
-            document.getElementById('user-paper-lost').style.display='block';
+            document.getElementById('user-paper-lost').style.display='flex';
         }
         else {
-            document.getElementById('user-scissor-lost').style.display='block';
+            document.getElementById('user-scissor-lost').style.display='flex';
         }
         if(computerChoice==='rock'){
-            document.getElementById('cpu-rock-lost').style.display='block';
+            document.getElementById('cpu-rock-lost').style.display='flex';
         }
         else if(computerChoice==='paper'){
-            document.getElementById('cpu-paper-lost').style.display='block';
+            document.getElementById('cpu-paper-lost').style.display='flex';
         }
         else {
-            document.getElementById('cpu-scissor-lost').style.display='block';
+            document.getElementById('cpu-scissor-lost').style.display='flex';
         }
     
         computerScore++;
     }
     else { 
         if(playerChoice==='rock'){
-            document.getElementById('user-rock-tie').style.display='block';
+            document.getElementById('user-rock-tie').style.display='flex';
         }
         else if(playerChoice==='paper'){
-            document.getElementById('user-paper-tie').style.display='block';
+            document.getElementById('user-paper-tie').style.display='flex';
         }
         else {
-            document.getElementById('user-scissor-tie').style.display='block';
+            document.getElementById('user-scissor-tie').style.display='flex';
         }
         if(computerChoice==='rock'){
-            document.getElementById('cpu-rock-tie').style.display='block';
+            document.getElementById('cpu-rock-tie').style.display='flex';
         }
         else if(computerChoice==='paper'){
-            document.getElementById('cpu-paper-tie').style.display='block';
+            document.getElementById('cpu-paper-tie').style.display='flex';
         }
         else {
-            document.getElementById('cpu-scissor-tie').style.display='block';
+            document.getElementById('cpu-scissor-tie').style.display='flex';
         }
     
-        document.getElementById('tie-area').style.display='block';
+        document.getElementById('tie-area').style.display='flex';
     }
     updateScore();
     localStorage.setItem('playerScore', playerScore);
