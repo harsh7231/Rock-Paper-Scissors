@@ -10,5 +10,5 @@ closeButton.addEventListener('click', () => {
     rulesPopup.style.display = 'none';
 });
 function gamepage() {
-    window.open("index.html");
+    window.location.href='index.html';
 }
