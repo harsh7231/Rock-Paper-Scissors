@@ -35,6 +35,7 @@ function play(playerChoice) {
         (playerChoice === 'paper' && computerChoice === 'rock') ||
         (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
+         document.getElementById('next-button').style.display = 'block';
         playerScore++;
         document.getElementById('win-area').style.display='block';
         if(playerChoice==='rock'){
@@ -61,6 +62,7 @@ function play(playerChoice) {
     (computerChoice === 'paper' && playerChoice === 'rock') ||
     (computerChoice === 'scissors' && playerChoice === 'paper')) 
     {
+         document.getElementById('next-button').style.display='none';
         document.getElementById('lost-area').style.display='block';
         if(playerChoice==='rock'){
             document.getElementById('user-rock-lost').style.display='flex';
@@ -84,6 +86,7 @@ function play(playerChoice) {
         computerScore++;
     }
     else { 
+         document.getElementById('next-button').style.display='none';
         if(playerChoice==='rock'){
             document.getElementById('user-rock-tie').style.display='flex';
         }
@@ -108,12 +111,7 @@ function play(playerChoice) {
     updateScore();
     localStorage.setItem('playerScore', playerScore);
     localStorage.setItem('computerScore', computerScore);
-    if(playerScore>computerScore){
-        document.getElementById('next-button').style.display = 'block';
-    }
-    else{
-        document.getElementById('next-button').style.display='none';
-    }
+   
     document.getElementById('game-area').style.display='none';
     
 }
