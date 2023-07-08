@@ -22,7 +22,7 @@ function updateScore() {
     document.getElementById('ys_score').innerText=playerScore;
 }
 function play(playerChoice) {
-    
+    document.getElementById('game-area').style.display='none';
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() *3)];
     
@@ -105,7 +105,7 @@ function play(playerChoice) {
     updateScore();
     localStorage.setItem('playerScore', playerScore);
     localStorage.setItem('computerScore', computerScore);
-    document.getElementById('game-area').style.display='none';
+    
     
 }
 function gamepage() {
