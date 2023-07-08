@@ -10,7 +10,7 @@ closeButton.addEventListener('click', () => {
     rulesPopup.style.display = 'none';
 });
 function opennewpage() {
-    window.open("won.html");
+    window.location.href='won.html';
 }
 let playerScore = localStorage.getItem('playerScore') || 0;
 let computerScore = localStorage.getItem('computerScore') || 0;
