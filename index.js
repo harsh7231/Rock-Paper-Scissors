@@ -11,6 +11,7 @@ closeButton.addEventListener('click', () => {
 });
 function opennewpage() {
     window.location.href='won.html';
+    updateScore();
 }
 //let playerScore = localStorage.getItem('playerScore') || 0;
 //let computerScore = localStorage.getItem('computerScore') || 0;
