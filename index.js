@@ -12,8 +12,8 @@ closeButton.addEventListener('click', () => {
 function opennewpage() {
     window.location.href='won.html';
 }
-let playerScore = localStorage.getItem('playerScore') || 0;
-let computerScore = localStorage.getItem('computerScore') || 0;
+//let playerScore = localStorage.getItem('playerScore') || 0;
+//let computerScore = localStorage.getItem('computerScore') || 0;
 
 updateScore();
 function updateScore() {
